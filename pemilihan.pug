@@ -1,0 +1,41 @@
+//- - var a = 9
+//- if a > 0
+//-     p #{a} adalah bilangan positif
+//- else if a == 0 
+//-     p Variable a bernilai 0
+//- else 
+//-     p #{a} variable a bernilai negatif
+//- br
+//- -var hari = 3
+//- case hari 
+//-     when 1 
+//-         p Minggu
+//-     when 2 
+//-         p Senin
+//-     when 3
+//-         p Selasa
+//-     when 4
+//-         p Rabu
+//-     when 5
+//-         p Kamis
+//-     when 6
+//-         p Jumat
+//-     when 7
+//-         p Sabtu
+//-     default
+//-         p Nomor hari salah
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Pemilihan Dengan Pug
+    body
+        h2 Demo Pemilihan di dalam Pug
+        if(bilangan > 0)
+            p #{bilangan} adalah bilangan positif
+        else if(bilangan == 0)
+            p Anda memasukkan nilai 0
+        else 
+            p #{bilangan} adalah bilangan negatif
+

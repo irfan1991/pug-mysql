@@ -1,0 +1,64 @@
+html
+    head
+        title Demo Template Pug
+        style
+            include style.css
+        script(src="./route.js")
+    body
+        h1 Ini Demo Pug
+        p Contoh Paragraf
+        br
+        p Ini adalah contoh teks #[strong tebal], #[em miring], dan #[u garis bawah]
+        br
+        p.
+          Ini adalah contoh 
+          paragraf yang isinya 
+          lebih dari satu baris 
+        br
+        p Ini adalah baris pertama #[br] Ini adalah baris kedua 
+        br
+        a(href="https://nodejs.org") Node JS
+        ol
+            li Javascript
+            li Node.js
+            li Express
+        br
+        ul 
+            li Web Developer
+            li UI/UX Designer
+            li Android Developer
+        br
+        table(border="1")
+            tr
+                th Kode
+                th Nama Produk
+                th Harga
+            tr
+                td B001
+                td Spidol
+                td 85000
+            tr
+                td B001
+                td Spidol
+                td 85000
+        br
+        //ini komentar satu baris
+        //
+            ini komentar
+            dua baris 
+        form(action="/register", method="post")
+            div
+                label(for="nama") Nama :
+                input(type="text", name="nama", placeholder="Nama Lengkap")
+            div
+                label(for="email") Email :
+                input(type="email", name="email" placeholder="name@email.com")
+            div
+                label(for="gender") Jenis Kelamin
+                select(name="gender")
+                    option(value="L") Laki - laki
+                    option(value="P") Perempuan
+            div
+                input(type="submit" , value="Daftar")
+
+

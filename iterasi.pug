@@ -1,0 +1,36 @@
+//- - var data = [20,10,30,50,40]
+//- ul
+//-     - var i = 0
+//-     while i < data.length
+//-         li = data[i++]
+//- ul 
+//-     each val in [10,20,30,40,50]
+//-         li= val
+
+//- br
+
+//- ul 
+//-     each val , index in ['nol','satu','dua']
+//-         li= index + ' : ' + val
+//- br
+//- ul 
+//-     each val, key in {'zero' : 'nol','one' : 'satu','two' : 'dua'}
+//-         li= key + ' adalah bahasa inggris dari '+ val
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Demo Array dalam Pug
+    body
+        h2 Demo Array dalam Pug
+        table(border="1")
+            tr
+                th(width="90") Kode
+                th(width="160") Nama Produk
+                th(width="100") Harga
+            each val in produk
+                tr
+                    td #{val[0]}
+                    td #{val[1]}
+                    td(align="right") #{val[2]}

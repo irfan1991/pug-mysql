@@ -1,0 +1,13 @@
+doctype 
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title Demo Pug
+    body
+        h2 Hello Pug
+        p Halaman ini berasal dari template pug
+        p Isi variabel nama: #{nama}
+        p Isi variabel daftar
+        ul 
+            each elemen in daftar
+                li=elemen
